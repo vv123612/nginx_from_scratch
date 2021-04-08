@@ -1,0 +1,19 @@
+# doesn't work
+version: "3.9"
+
+services:
+
+  ubuntu:
+    image: ubuntu:latest
+    container_name: nginx_from_scratch3
+    # restart: always
+    # environment:
+    #   - APP_NAME=MyFlaskApp
+    ports:
+      - "80:80"
+      # - "8080:8080"
+      # - "5000:5000"
+    command:
+      bash
+
+

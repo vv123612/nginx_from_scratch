@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+
+  nginx:
+    build: .
+    container_name: nginx_from_scratch1
+    restart: always
+    environment:
+      - APP_NAME=MyFlaskApp
+    ports:
+      # - "8080:8080"
+      # - "5000:5000"
+      - "80:80"
+

@@ -1,0 +1,19 @@
+apt-get update
+apt-get install -y nginx
+apt-get install -y mc
+apt-get install -y curl
+
+
+docker-compose up
+curl 127.0.0.1
+curl 127.0.0.1/333.html
+curl 127.0.0.1/extra_page.html
+curl 127.0.0.1/my.html
+
+http://localhost/my.html
+
+docker build .
+
+docker build -t ubuntu-for-nginx .
+
+nginx_from_scratch_nginx
